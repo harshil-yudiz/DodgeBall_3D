@@ -1,0 +1,17 @@
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/GAToUnityCallbacks.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroEnd.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroHeaderBegin.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroSourceBegin.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAApplication.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAConfiguration.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGADebug.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAEvents.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInput.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboard.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboardCallbacks.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGATypes.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAVersion.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGACallbacks.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAConfigurationCallbacks.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAKeyEventCallbacks.h
+/Users/yudiz/Documents/Harshil_yudiz/DodgeBall_3D/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAMotionEventCallbacks.h

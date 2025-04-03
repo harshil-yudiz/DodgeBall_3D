@@ -31,22 +31,22 @@ namespace FirstPersonMobileTools.Utility
             m_Camera = GetComponentInChildren<Camera>();
             m_MovementController = GetComponent<MovementController>();
 
-            m_OriginalFov = m_Camera.fieldOfView;
+            // m_OriginalFov = m_Camera.fieldOfView;
             m_CurrentFov = m_OriginalFov;
         }
 
         private void FixedUpdate() 
         {
 
-            if (m_Sprint && !m_Crouch && m_Camera.fieldOfView != m_OriginalFov + m_Ammount)
-            {
-                AdjustFov(Time.deltaTime);
-            }
-            
-            if ((!m_Sprint || m_Crouch) && m_Camera.fieldOfView != m_OriginalFov)
-            {
-                AdjustFov(-Time.deltaTime);
-            }
+            // if (m_Sprint && !m_Crouch && m_Camera.fieldOfView != m_OriginalFov + m_Ammount)
+            // {
+            //     AdjustFov(Time.deltaTime);
+            // }
+
+            // if ((!m_Sprint || m_Crouch) && m_Camera.fieldOfView != m_OriginalFov)
+            // {
+            //     AdjustFov(-Time.deltaTime);
+            // }
 
         }
 
@@ -55,7 +55,7 @@ namespace FirstPersonMobileTools.Utility
 
             m_CurrentFov += (m_Ammount / m_Delay ) * time;
             m_CurrentFov = Mathf.Clamp(m_CurrentFov, m_OriginalFov, m_OriginalFov + m_Ammount);
-            m_Camera.fieldOfView = m_CurrentFov;
+            // m_Camera.fieldOfView = m_CurrentFov;
 
         }
 

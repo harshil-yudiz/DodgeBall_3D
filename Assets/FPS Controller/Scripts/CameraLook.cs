@@ -49,31 +49,37 @@ namespace FirstPersonMobileTools.DynamicFirstPerson
 			else Debug.LogError($"Scene has no Event System!");
 
 			OnChangeSettings();
-			
-		} 
 
-		private void Update() 
+		}
+
+		private void Update()
 		{
-
 			if (Input.touchCount == 0) return;
+
 			foreach (var touch in Input.touches)
 			{
-				if ((touch.phase == TouchPhase.Began && m_EventStytem != null) &&
-					!m_EventStytem.IsPointerOverGameObject(touch.fingerId) &&
-					m_AvailableTouchesId.Count <= m_TouchLimit)
-						m_AvailableTouchesId.Add(touch.fingerId.ToString());
-				
-				if (m_AvailableTouchesId.Count == 0) continue;	
-				
-				if (m_IsTouchAvailable(touch))
+				// Check if the touch is on the right half of the screen
+				if (touch.position.x > m_ScreenWidth / 2)
 				{
-					delta += new Vector2(touch.deltaPosition.x, touch.deltaPosition.y);
-					if (touch.phase == TouchPhase.Ended) m_AvailableTouchesId.RemoveAt(0);
-				} 
-				else if (touch.phase == TouchPhase.Ended) m_AvailableTouchesId.Remove(touch.fingerId.ToString());
+					if ((touch.phase == TouchPhase.Began && m_EventStytem != null) &&
+						!m_EventStytem.IsPointerOverGameObject(touch.fingerId) &&
+						m_AvailableTouchesId.Count <= m_TouchLimit)
+					{
+						m_AvailableTouchesId.Add(touch.fingerId.ToString());
+					}
+
+					if (m_AvailableTouchesId.Count == 0) continue;
+
+					if (m_IsTouchAvailable(touch))
+					{
+						delta += new Vector2(touch.deltaPosition.x, touch.deltaPosition.y);
+						if (touch.phase == TouchPhase.Ended) m_AvailableTouchesId.RemoveAt(0);
+					}
+					else if (touch.phase == TouchPhase.Ended) m_AvailableTouchesId.Remove(touch.fingerId.ToString());
+				}
 			}
-			
 		}
+
 
 		private void LateUpdate()
 		{

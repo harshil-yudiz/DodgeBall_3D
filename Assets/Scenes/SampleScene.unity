@@ -679,7 +679,7 @@ Transform:
   m_GameObject: {fileID: 4809654525091819203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.33, z: 0}
+  m_LocalPosition: {x: 0, y: 8.4, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -789,7 +789,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7299611159146840243}
   - {fileID: 7299611158845893736}
   - {fileID: 7299611158924546699}
   - {fileID: 7299611158885964551}
@@ -1490,7 +1489,7 @@ Transform:
   m_GameObject: {fileID: 7299611158999172959}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.32, z: 0}
+  m_LocalPosition: {x: -0.97, y: 11.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1618,81 +1617,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &7299611159146840242
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7299611159146840243}
-  - component: {fileID: 7299611159146840245}
-  - component: {fileID: 7299611159146840244}
-  m_Layer: 0
-  m_Name: CrossHair
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7299611159146840243
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7299611159146840242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7299611158787712908}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 3, y: 3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7299611159146840244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7299611159146840242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f5deae6aebf204244a73de8b9e8305d8, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &7299611159146840245
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7299611159146840242}
-  m_CullTransparentMesh: 1
 --- !u!1 &7299611159332135869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,13 +1856,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2.5
-  m_Radius: 0.625
+  m_Height: 21
+  m_Radius: 5
   m_SlopeLimit: 50
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.25, z: 0}
+  m_Center: {x: 0, y: 8.8, z: 0}
 --- !u!4 &7299611159910302276
 Transform:
   m_ObjectHideFlags: 0
@@ -1991,22 +1915,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Joystick: {fileID: 7299611158845893749}
-  m_Acceleration: 10
-  m_WalkSpeed: 3
-  m_RunSpeed: 8
-  m_CrouchSpeed: 1
+  m_Acceleration: 20
+  m_WalkSpeed: 25
+  m_RunSpeed: 50
+  m_CrouchSpeed: 15
   m_CrouchDelay: 0.1
-  m_CrouchHeight: 1.2
-  m_JumpForce: 12
-  m_Gravity: 30
-  m_LandMomentum: 0.5
-  m_FootStepSounds:
-  - {fileID: 8300000, guid: 8f0eaf072441a674597dd1ba6383beca, type: 3}
-  - {fileID: 8300000, guid: 8375a341ff0109d448199ca126dfe119, type: 3}
-  - {fileID: 8300000, guid: 013a640341d912440be6c9d4793b9e13, type: 3}
-  - {fileID: 8300000, guid: e3ecbcda65738dd4bac8a3042ceae9db, type: 3}
+  m_CrouchHeight: 5
+  m_JumpForce: 45
+  m_Gravity: 100
+  m_LandMomentum: 2
+  m_FootStepSounds: []
   m_JumpSound: {fileID: 0}
-  m_LandSound: {fileID: 8300000, guid: b5a24511586672e46a47cba13165cbc6, type: 3}
+  m_LandSound: {fileID: 0}
   m_WalkBob:
     BobCurve:
       serializedVersion: 2
@@ -2032,10 +1952,10 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    BobRange: {x: 0.15, y: -0.2, z: 0.1}
+    BobRange: {x: 0.1, y: 0.1, z: 0.1}
     Speed_Multiplier:
       InStep: 1
-      OutStep: 0.75
+      OutStep: 1
     StepCount: 0
     BackToOriginalPosition: 1
     OnStep: 0
@@ -2064,7 +1984,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    BobRange: {x: 0.05, y: 0.05, z: 0.05}
+    BobRange: {x: 0.1, y: 0.1, z: 0.1}
     Speed_Multiplier:
       InStep: 1
       OutStep: 1

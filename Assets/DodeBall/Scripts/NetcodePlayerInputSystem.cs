@@ -17,7 +17,7 @@ partial struct NetcodePlayerInputSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        foreach(RefRW<NetcodePlayerInput> netcodePlayerInput in SystemAPI.Query<RefRW<NetcodePlayerInput>>().WithAll<GhostOwnerIsLocal>())
+        foreach((RefRW<NetcodePlayerInput> netcodePlayerInput, RefRW<MyValue> myValue) in SystemAPI.Query<RefRW<NetcodePlayerInput>, RefRW<MyValue>>().WithAll<GhostOwnerIsLocal>())
         {
             float2 inputVector = new float2();
             if(Input.GetKey(KeyCode.W))
@@ -37,6 +37,16 @@ partial struct NetcodePlayerInputSystem : ISystem
                 inputVector.x += 1;
             }
             netcodePlayerInput.ValueRW.inputVector = inputVector;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Shoot");
+                netcodePlayerInput.ValueRW.shoot.Set();
+            }
+            else
+            {
+                netcodePlayerInput.ValueRW.shoot = default;
+            }
         }
     }
 

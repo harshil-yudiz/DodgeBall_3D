@@ -13,6 +13,8 @@ namespace FirstPersonMobileTools.DynamicFirstPerson
         [SerializeField] private KeyCode JumpInput;
         [SerializeField] private KeyCode SprintInput;
         [SerializeField] private KeyCode CrouchInput;
+        [SerializeField] private KeyCode pickUpBallInput;
+        [SerializeField] private KeyCode throwBallInput;
         [SerializeField] private bool LockCursor;
         [SerializeField] private Vector2 _Sensitivity = new Vector2(50f, 50f);
 
@@ -23,7 +25,12 @@ namespace FirstPersonMobileTools.DynamicFirstPerson
         Quaternion y;
         Quaternion x;
         Vector2 delta = Vector2.zero;
-        
+
+        [Header("Script Ref")]
+
+        public GamePlayScreen gamePlayScreen;
+        public PlayerController playerController;
+
         private void Start() {
             
             if (Camera.main != null)
@@ -58,7 +65,22 @@ namespace FirstPersonMobileTools.DynamicFirstPerson
             if (Input.GetKeyUp(CrouchInput))
                 movementController.Input_Crouch = false;
 
-        #endif
+            if (Input.GetKeyDown(pickUpBallInput))
+            {
+                playerController.PickupBall();
+            }
+
+            if (Input.GetKeyDown(throwBallInput))
+            {
+                gamePlayScreen.OnPressThrowBallButton();
+            }
+
+            if (Input.GetKeyUp(throwBallInput))
+            {
+                gamePlayScreen.OnReleaseThrowBallButton();
+            }
+
+#endif
 
         }
 

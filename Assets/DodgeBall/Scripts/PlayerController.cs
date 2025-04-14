@@ -132,8 +132,8 @@ public class PlayerController : MonoBehaviour
         ball.transform.SetParent(null);
         isBallInHand = false;
         trajectoryLine.enabled = false;
-        
-        Debug.Log($"<color=white>Power : {power}</color>");
+
+        // Debug.Log($"<color=white> Power : {power}</color>");
         ball.ThrowBall(throwDirection.forward, power);
     }
 }

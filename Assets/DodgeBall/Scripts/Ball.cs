@@ -6,8 +6,8 @@ public class Ball : MonoBehaviour
     public Rigidbody rb;
 
     [Header("Throw Settings")]
-    public float minThrowForce = 800f;
-    public float maxThrowForce = 1600f;
+    public float minThrowForce;
+    public float maxThrowForce;
 
     [Header("Pickup Settings")]
     public float minVelocityToPickup = 0.8f;
@@ -28,7 +28,7 @@ public class Ball : MonoBehaviour
             rb.AddForce(Physics.gravity * gravityMultiplier, ForceMode.Acceleration);
         }
 
-        if (!ableToPickUpBall && rb.velocity.magnitude < minVelocityToPickup)
+        if (!ableToPickUpBall && rb.linearVelocity.magnitude < minVelocityToPickup)
         {
             EnablePickup(true);
         }
@@ -40,7 +40,7 @@ public class Ball : MonoBehaviour
         rb.isKinematic = false;
 
         float throwForce = Mathf.Lerp(minThrowForce, maxThrowForce, powerPercentage) * 10f;
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         rb.AddForce(throwDirection * throwForce, ForceMode.Impulse);
 
         // Calculate speed in different units
